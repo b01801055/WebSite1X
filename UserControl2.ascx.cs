@@ -11,4 +11,29 @@ public partial class UserControl2 : System.Web.UI.UserControl
     {
 
     }
+
+    protected void Button_Click(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+
+        switch (btn.Text.ToString())
+        {
+            case "+":
+                Session["math"] = "+";
+
+                break;
+            case "-":
+                Session["math"] = "-";
+                break;
+            case "*":
+                Session["math"] = "*";
+                break;
+            case "/":
+                Session["math"] = "/";
+                break;
+            default:
+                Session["math"] = "@";
+                break;
+        }
+    }
 }

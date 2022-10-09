@@ -17,7 +17,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <uc1:usercontrol1 runat="server" id="UserControl1" />
+            <uc1:UserControl1 runat="server" id="UserControl1" />
 
             <uc1:UserControl2 runat="server" id="UserControl2" />
 
